@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Encounter Table Generator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/css/uikit.min.css"/>
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <a class="uk-navbar-item uk-logo" href="/Encounter-Table-Generator/">Encounter Table Generator</a>
+                    <li><a href="/Encounter-Table-Generator/todo.html">Todo List</a></li>
+                    <li><a href="/Encounter-Table-Generator/changelog.html">Changelog</a></li>
+                    <li><a href="/Encounter-Table-Generator/faq.html">FAQ</a></li>
+                    <!-- Download button -->
+                    <li><a href="/Encounter-Table-Generator/download.html"><button class="uk-button uk-button-primary" type="submit">Download</button></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Page content -->
+        <div class="uk-container">
+            <main>
+                <h1 class="uk-heading-divider">Download</h1>
+                <!-- Create download section with 2 cards, and normal text sections -->
+                <div class="uk-child-width-expand@s" uk-grid>
+                    <div class="uk-grid-item-match">
+                        <div class="uk-card uk-card-primary uk-card-body">
+                            <h3>Stable Release</h3>
+                            <p>
+                                The latest stable release can be found here! This is recommended for most users.
+                                <form action="https://github.com/TheCrafters001/Encounter-Table-Generator/releases/latest">
+                                    <button class="uk-button uk-button-default uk-disabled" type="submit" disabled>No Stable Build</button>
+                                </form>
+                            </p>
+                        </div>
+                     </div>
+                     <div class="uk-grid-item-match">
+                        <div class="uk-card uk-alert-warning uk-card-body">
+                            <h3>Pre-release Builds</h3>
+                            <p>
+                                Want to try out new features that are coming to the next version? You can try them out early here! These builds are not stable, however. This is not recommended for most users.
+                                <form action="https://github.com/TheCrafters001/Encounter-Table-Generator/releases">
+                                    <button class="uk-button uk-button-default" type="submit">Get Pre-Release</button>
+                                </form>
+                            </p>
+                        </div>
+                     </div>
+                    <div>
+                        <h3>Source Code</h3>
+                        <p>
+                            Want to build your own version of this software? You can get the source code here! You will need a copy of <a href="http://visualstudio.com">Visual Studio 2019 or higher</a> to be able to edit the code. This is not recommended for most users.
+                            <form action="https://github.com/TheCrafters001/Encounter-Table-Generator/archive/master.zip">
+                                <button class="uk-button uk-button-default" type="submit"><span uk-icon="github"></span> Download Source Code</button>
+                            </form>
+                        </p>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit.min.js" 
+                integrity="sha512-OZ9Sq7ecGckkqgxa8t/415BRNoz2GIInOsu8Qjj99r9IlBCq2XJlm9T9z//D4W1lrl+xCdXzq0EYfMo8DZJ+KA==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit-icons.min.js" 
+                integrity="sha512-hcz3GoZLfjU/z1OyArGvM1dVgrzpWcU3jnYaC6klc2gdy9HxrFkmoWmcUYbraeS+V/GWSgfv6upr9ff4RVyQPw==" crossorigin="anonymous"></script>
+    </body>
+</html>
