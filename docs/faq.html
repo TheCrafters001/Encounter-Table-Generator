@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Encounter Table Generator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/css/uikit.min.css"/>
+        <link href="css/styles.css" rel="stylesheet">
+
+        <!-- Octomments -->
+        <link href="https://unpkg.com/octomments/build/ocs-ui.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <a class="uk-navbar-item uk-logo" href="/Encounter-Table-Generator/">Encounter Table Generator</a>
+                    <li><a href="/Encounter-Table-Generator/todo.html">Todo List</a></li>
+                    <li><a href="/Encounter-Table-Generator/changelog.html">Changelog</a></li>
+                    <li><a href="/Encounter-Table-Generator/faq.html">FAQ</a></li>
+                    <!-- Download button -->
+                    <li><a href="/Encounter-Table-Generator/download.html"><button class="uk-button uk-button-primary" type="submit">Download</button></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Page content -->
+        <div class="uk-container">
+            <main>
+                <h1 class="uk-heading-divider">Frequently Asked Questions</h1>
+                <p class="uk-article-meta">These are some questions that are asked frequently. Also, at the bottom of this page, there is a comment section. Feel free to ask a question there!</p>
+                <ul uk-accordion="collapsible: false">
+                    <li>
+                        <a class="uk-accordion-title" href="#">Can I contribute to this project?</a>
+                        <div class="uk-accordion-content">
+                            <p>Yes! This project is covered under the GNU GPL V3.0 license, and it is also open-source! You can check out the source code on <a href="https://github.com/TheCrafters001/Encounter-Table-Generator">this GitHub Repo</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Can I create my own version of this?</a>
+                        <div class="uk-accordion-content">
+                            <p>YES! You can clone the GitHub Repo here: <a href="https://github.com/TheCrafters001/Encounter-Table-Generator">https://github.com/TheCrafters001/Encounter-Table-Generator</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Does TheCrafters001 own Pok&eacute;mon Essentials or Pok&eacute;mon?</a>
+                        <div class="uk-accordion-content">
+                            <p>No, Pok&eacute;mon is owned by GAME FREAK Inc, Creatures Inc, The Pok&eacute;mon Company International and Nintendo.</p>
+                        </div>
+                    </li>
+                </ul>
+            </main>
+            <section id="ask">
+                <h2 class="uk-heading-divider">Ask your own questions!</h2>
+                <p class="uk-article-meta">Have a question that isn't here? Ask here!</p>
+                <div id="comments"></div>
+            </section>
+        </div>
+
+
+
+        <!-- Octomments -->
+        <script src="https://unpkg.com/octomments/build/ocs.min.js"></script>
+        <script>
+        Octomments({
+            github: {
+            owner: 'TheCrafters001',
+            repo: 'Encounter-Table-Generator',
+            },
+            issueNumber: 1,
+            renderer: [OctommentsRenderer, '#comments']
+        }).init();
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit.min.js" 
+                integrity="sha512-OZ9Sq7ecGckkqgxa8t/415BRNoz2GIInOsu8Qjj99r9IlBCq2XJlm9T9z//D4W1lrl+xCdXzq0EYfMo8DZJ+KA==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit-icons.min.js" 
+                integrity="sha512-hcz3GoZLfjU/z1OyArGvM1dVgrzpWcU3jnYaC6klc2gdy9HxrFkmoWmcUYbraeS+V/GWSgfv6upr9ff4RVyQPw==" crossorigin="anonymous"></script>
+    </body>
+</html>
